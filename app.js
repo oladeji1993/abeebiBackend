@@ -15,7 +15,9 @@ const transationRouter = require("./api/transactions/transactions.router")
 
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: "*",
+}));
 app.use("/api/users", userRouter)
 app.use("/api/roles", userRouter)
 app.use("/api/products", productRouter)

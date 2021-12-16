@@ -12,7 +12,6 @@ module.exports = {
                 data: {
                     results,
                     totalpayment: results.reduce((a, b) => +a + +b.amountpaid, 0)
-
                 }
             });
         });

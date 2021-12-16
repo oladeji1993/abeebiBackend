@@ -5,7 +5,7 @@ const pool = createPool({
     host: process.env.DB_HOST,
     user: process.env.USER,
     password: process.env.PASSWORD,
-    database: process.env.MYSQL_DB,
+    database: process.env.DATABASE,
     connectionLimit: 10
 });
 
