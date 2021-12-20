@@ -51,15 +51,15 @@ module.exports = ({
 
     updatePackSize: (data, callback) => {   
         pool.query(
-            `update addpacksize set productname=?, sellingprice=?, packsize=?, quantity=?, damages=?, costofproduction=?, where id=?`,
+            `update addpacksize set productname=?, sellingprice=?, packsize=?, quantity=?, damages=?,date=? where id=?`,
             [
                 data.productname,
                 data.sellingprice,
                 data.packsize,
                 data.quantity,
                 data.damages,
-                data.id,
-                data.date
+                data.date,
+                data.id
 
             ],
             (error, results, fields) =>{

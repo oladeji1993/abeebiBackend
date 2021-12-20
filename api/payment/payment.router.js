@@ -2,10 +2,10 @@ const { fetchPayment,   addPayment, removePayment } = require("./payment.control
 const router = require("express").Router();
 
 
-router.get("/", fetchPayment);
-router.post("/", addPayment); 
+router.get("/fetch", fetchPayment);
+router.post("/add", addPayment); 
 // router.patch("/", editCustomer);
-router.delete("/:id", removePayment);
+router.delete("/delete/:id", removePayment);
 
 
 

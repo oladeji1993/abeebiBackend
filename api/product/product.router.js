@@ -3,9 +3,9 @@ const router = require("express").Router();
 
 
 
-router.post("/", productName);
-router.get("/", getProduct);
-router.patch("/", updateProductStatus)
+router.post("/add", productName);
+router.get("/fetch", getProduct);
+router.patch("/update", updateProductStatus);
 
 
 module.exports = router; 

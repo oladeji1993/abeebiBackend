@@ -2,10 +2,10 @@ const { getProduct,  packSize, updateProduct, deleteProduct } = require("./packS
 const router = require("express").Router();
 
 
-router.get("/", getProduct);
-router.post("/", packSize); 
-router.patch("/", updateProduct);
-router.delete("/:id", deleteProduct);
+router.get("/get", getProduct);
+router.post("/packsize", packSize); 
+router.patch("/patch", updateProduct);
+router.delete("/delete/:id", deleteProduct);
 
 
 

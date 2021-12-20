@@ -4,8 +4,8 @@ const router = require("express").Router();
 
 
 
-router.post("/", createUser);
-router.get("/", getRole);
+router.post("/add", createUser);
+router.get("/fetchrole", getRole);
 router.post("/login", login);
 
 

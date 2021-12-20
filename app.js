@@ -13,11 +13,17 @@ const procurementRouter = require("./api/procurement/procurement.router")
 const paymentIDRouter = require("./api/paymentByID/paymentbyid.router")
 const transationRouter = require("./api/transactions/transactions.router")
 
-
+app.use(cors())
 app.use(express.json());
-app.use(cors({
-    origin: "*",
-}));
+app.use(express.urlencoded({extended: true}));
+
+app.post('/test', (req, res)=>{
+  console.log(req.body)
+})
+
+
+
+
 app.use("/api/users", userRouter)
 app.use("/api/roles", userRouter)
 app.use("/api/products", productRouter)
@@ -29,6 +35,8 @@ app.use("/api/report", orderReportRouter)
 app.use("/api/procurement", procurementRouter)
 app.use("/api/paymentID", paymentIDRouter)
 app.use("/api/transaction", transationRouter)
+
+
 
 
 

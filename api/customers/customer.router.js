@@ -2,10 +2,10 @@ const { fetchCustomer,   addCustomer, editCustomer, removeCustomer } = require("
 const router = require("express").Router();
 
 
-router.get("/", fetchCustomer);
-router.post("/", addCustomer); 
-router.patch("/", editCustomer);
-router.delete("/:id", removeCustomer);
+router.get("/fetch", fetchCustomer);
+router.post("/add", addCustomer); 
+router.patch("/patch", editCustomer);
+router.delete("/delete/:id", removeCustomer);
 
 
 

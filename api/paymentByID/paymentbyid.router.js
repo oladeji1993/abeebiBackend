@@ -2,8 +2,8 @@ const {  order, editOrder } = require("./paymentbyid.controller");
 const router = require("express").Router();
 
 
-router.post("/",  order);
-router.patch("/", editOrder);
+router.post("/add",  order);
+router.patch("/edit", editOrder);
 
 
 

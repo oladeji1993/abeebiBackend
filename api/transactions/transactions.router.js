@@ -2,7 +2,7 @@ const {  customerReport } = require("./transactions.controller");
 const router = require("express").Router();
 
 
-router.post("/", customerReport);
+router.post("/add", customerReport);
 
 
 

@@ -94,6 +94,7 @@ module.exports = ({
     },
 
     deleteCustomer: (id, callback) => {
+        console.log(id)
         pool.query(
             `delete from customers where id = ?`,
             [id],
